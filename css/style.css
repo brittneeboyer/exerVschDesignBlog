@@ -1,0 +1,155 @@
+:root {
+    --clr-primary-900: rgb(41, 37, 31);
+    --clr-primary-700: rgb(87, 68, 41);
+    --clr-primary-500: rgb(207, 171, 120);
+    --clr-primary-300: rgb(247, 222, 187);
+    --clr-primary-100: rgb(248, 240, 229);
+
+    --ff-primary: "Palatino, URW Palladio L", serif;
+    --ff-accent: "Didot", serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "var(--ff-primary)";
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: var(--clr-primary-700);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+    margin-left: 57px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: var(--ff-primary);
+    color:rgb(247, 222, 187);
+}
+
+nav {
+    float: right;
+    line-height: 100px;
+    margin-right: 57px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--ff-primary);
+    color:rgb(247, 222, 187);
+    margin: 0 10px;
+}
+
+.banner_area {
+    width: 100%;
+    height: 500px;
+    top: 100px;
+    background-image: url(../images/rock.jpeg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner_area h1{
+    padding-top: 20%;
+    font-size: 60px;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    color:rgb(87, 68, 41);
+    text-align: center;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.dark {
+    background-color: var(--clr-primary-100);
+    color: var(--clr-primary-700);
+}
+
+.less_dark {
+    background-color: var(--clr-primary-300);
+    color: var(--clr-primary-700);
+}
+
+.neutral {
+    background-color: var(--clr-primary-500);
+    color: var(--clr-primary-700);
+}
+
+.neutral_light {
+    background-color: var(--clr-primary-300);
+    color: var(--clr-primary-700);
+}
+
+.light {
+    background-color: var(--clr-primary-100);
+    color: var(--clr-primary-700);
+}
+
+.text_center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+    font-size: .9em;
+}
+
+.split {
+    column-count: 2;
+    column-gap: 30px;
+}
+
+h2 {
+    font-family: var(--ff-primary);
+    font-weight: 2000;
+}
+
+#farm {
+    display: block;
+    max-width: 100%;
+}
+
+#fabric {
+    display: block;
+    max-width: 100%;
+}
+
+#sustain {
+    display: block;
+    max-width: 100%;
+}
